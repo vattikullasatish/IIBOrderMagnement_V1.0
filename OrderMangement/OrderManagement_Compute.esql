@@ -7,7 +7,7 @@ CREATE COMPUTE MODULE OrderManagement_Compute
 	
 				IF (InputRoot.XMLNSC.OrderDetail.OrderId <> '') THEN
 					 CALL CopyEntireMessage();
-				--	 SET OutputRoot.XMLNSC.OrderDetail.OrderDate= CURRENT_TIMESTAMP;
+					 SET OutputRoot.XMLNSC.OrderDetail.OrderDate= CURRENT_TIMESTAMP;
 				ELSE
 					--THROW USER EXCEPTION MESSAGE 2590 VALUES('Invalid Message Format');
 					SET OutputRoot.XMLNSC.FaultMessage= 'Invalid Message';
