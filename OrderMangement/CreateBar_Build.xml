@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="build">
+  <target name="build">
+    <antcall target="create"/>
+  </target>
+  <!-- mqsicreatebar -data C:\Workspace -b myflow.bar -a TestFlowProject -->
+  <target name="create">
+     <echo message="mqsicreatebar execution started"/>
+  	<!-- mqsicreatebar.exe file location -->
+    <exec executable="C:\Program Files\IBM\IIB\10.0.0.9\tools\mqsicreatebar.exe" spawn="false" failonerror="true">
+      <arg value="-data" />
+      <arg value="E:\NewWorkspace" /><!--provide toolkit workspace-->
+      <arg value="-b" />
+      <arg value="E:\NewWorkspace\OrderMangement\ANT Built Bar\newBarFile.bar" /><!--provide Bar file location to be stored-->
+       <arg value="-a" />
+      <arg value="OrderMangement" /><!--provide application name-->
+      </exec>
+    <echo message="mqsicreatebar execution completed" />
+  </target>
+ 
+</project>
