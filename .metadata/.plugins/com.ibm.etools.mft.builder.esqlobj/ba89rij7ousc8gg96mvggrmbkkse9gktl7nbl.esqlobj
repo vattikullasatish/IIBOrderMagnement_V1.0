@@ -1,13 +1,11 @@
-
-
-CREATE COMPUTE MODULE OrderManagement_Compute
-	CREATE FUNCTION Main() RETURNS BOOLEAN
+/*EATE FUNCTION Main() RETURNS BOOLE*/
 	BEGIN
 		-- CALL CopyMessageHeaders();
 	
 				IF (InputRoot.XMLNSC.OrderDetail.OrderId <> '') THEN
 					 CALL CopyEntireMessage();
-					  SET OutputRoot.XMLNSC.OrderDetail.OrderDate= CURRENT_TIMESTAMP;
+				--	 SET OutputRoot.XMLNSC.OrderDetail.OrderDate= CURRENT_TIMESTAMP;
+				abcd;
 				ELSE
 					--THROW USER EXCEPTION MESSAGE 2590 VALUES('Invalid Message Format');
 					SET OutputRoot.XMLNSC.FaultMessage= 'Invalid Message';
@@ -35,4 +33,3 @@ CREATE COMPUTE MODULE OrderManagement_Compute
 	CREATE PROCEDURE CopyEntireMessage() BEGIN
 		SET OutputRoot = InputRoot;
 	END;
-END MODULE;
