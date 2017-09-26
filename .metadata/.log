@@ -1,0 +1,22 @@
+!SESSION 2017-09-26 14:29:01.121 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 10 amd64-64 Compressed References 20170406_343211 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR4_20170406_2107_B343211
+JIT  - tr.r13.java_20170406_343211
+GC   - R27_Java727_SR4_20170406_2107_B343211_CMPRSS
+J9CL - 20170406_343211
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b C:\Program Files (x86)\Jenkins\workspace\Build IIB Bar File Job\newBarFile.bar -a OrderMangement
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data C:\Program Files (x86)\Jenkins\workspace\Build IIB Bar File Job -b C:\Program Files (x86)\Jenkins\workspace\Build IIB Bar File Job\newBarFile.bar -a OrderMangement
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-09-26 14:29:10.788
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-09-26 14:29:20.384
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-09-26 14:29:55.063
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-09-26 14:29:55.063
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
